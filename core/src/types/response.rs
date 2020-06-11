@@ -17,7 +17,6 @@ pub struct Success {
 
 /// Unsuccessful response
 #[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
-#[serde(deny_unknown_fields)]
 pub struct Failure {
 	/// Protocol Version
 	#[serde(skip_serializing_if = "Option::is_none")]
